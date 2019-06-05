@@ -33,6 +33,7 @@ port = bot_config.get('port')
 core_dev = bot_config.get('core_device')
 core_vlan = bot_config.get('core_vlan')
 core_exclude = bot_config.get('core_address_exclude')
+email_domain = bot_config.get('email_domain')
 
 # Set up file/directory structure
 directories = config['directories']
@@ -63,7 +64,7 @@ def index():
     if email == bot_email:
         return ''
 
-    if 'VistaOutdoor.com' in email:
+    if email_domain in email:
 
         # If message is none, send 'help' info, otherwise, complete task as requested
 
