@@ -1,0 +1,9 @@
+[Unit]
+Description=Webex Teams ciscoconfbot System Service
+
+[Service]
+ExecStart=/usr/bin/python3 -m ciscoconfbot /path/to/config.ini
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
