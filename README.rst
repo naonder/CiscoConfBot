@@ -39,11 +39,13 @@ Run with
 
     python -m ciscoconfbot path/to/config/file.ini
 
+
 | Alternatively, you can setup a system service to start on reboot/reload.
 | See example service file for a quick idea.
 | Once configured, you can enable it once with:
 
     systemctl start nameofservice.service
+
 
 | Or you can enable the service to start after the server/device has been reloaded
 
